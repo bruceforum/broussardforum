@@ -518,19 +518,19 @@ p.s {
 
 .btn-outline,
 .is-style-outline {
-	border: 1px solid rgb(28, 82, 173);
-	color: rgba(46, 51, 57, 1);
+	border: 1px solid rgba(23, 36, 160, 1);
+	color: rgba(23, 36, 160, 1);
 }
 
 .btn-reversed,
 .is-style-reversed {
 	background: #FFFFFF;
-	color: rgba(46, 51, 57, 1);
+	color: rgba(23, 36, 160, 1);
 }
 
 .btn-ghost,
 .is-style-ghost { 
-	border: 1px solid rgba(255, 255, 255, 1);
+	border: 1px solid #FFFFFF;
 	color: #FFFFFF;
 }
 

@@ -5,6 +5,9 @@
 			"core/button": {
 				"variations": {
 					"outline": {
+                        "color": {
+                            "text": false
+                        },
                         "border": {
                             "color": false,
                             "radius": false,
