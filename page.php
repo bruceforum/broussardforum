@@ -32,14 +32,6 @@ get_header(); ?>
 
 				<?php endif; ?>
 
-				<?php
-				if ( get_edit_post_link() ) :
-
-					edit_post_link( esc_html__( '(Edit)', 'scaffold' ), '<p class="edit-link">', '</p>' );
-
-				endif;
-				?>
-
 				<div class="entry-content">
 					<?php
 					the_content();
@@ -52,6 +44,14 @@ get_header(); ?>
 					);
 					?>
 				</div>
+
+				<?php
+				if ( get_edit_post_link() ) :
+
+					edit_post_link( esc_html__( '(Edit)', 'scaffold' ), '<p class="edit-link">', '</p>' );
+
+				endif;
+				?>
 
 			</article>
 
