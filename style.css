@@ -817,6 +817,13 @@ a:active {
 	width: 100%;
 }
 
+.wp-block-cover .wp-block-cover__inner-container,
+.wp-block-cover-image .wp-block-cover__inner-container {
+	color: inherit;
+	width: inherit;
+	z-index: inherit;
+}
+
 .container,
 .wp-block-cover__inner-container {
 	width: 100%;
