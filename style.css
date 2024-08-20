@@ -20,6 +20,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
+# Theme
+# Elevation
 # Typography
 # Elements
 # Forms
@@ -38,6 +40,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	## Comments
 # Sidebar
 	## Widgets
+# Grid
 # Footer
 # Infinite Scroll
 # Media
@@ -262,12 +265,83 @@ th {
 }
 
 /*--------------------------------------------------------------
+# Theme
+--------------------------------------------------------------*/
+
+.primary-100 {
+	color: #414B5A;
+}
+
+.primary-75 {
+	color: #7E8C9F;
+}
+
+.primary-50 {
+	color: #CDDCDF;
+}
+
+.primary-25 {
+	color: #DCEAED;
+}
+
+.primary-10 {
+	color: #EFF5F7;
+}
+
+.primary-0 {
+	color: #FFFFFF;
+}
+
+.secondary-100 {
+	color: #414B5A;
+}
+
+.secondary-75 {
+	color: #7E8C9F;
+}
+
+.secondary-50 {
+	color: #CDDCDF;
+}
+
+.secondary-25 {
+	color: #DCEAED;
+}
+
+.secondary-10 {
+	color: #EFF5F7;
+}
+
+.secondary-0 {
+	color: #FFFFFF;
+}
+
+/*--------------------------------------------------------------
+# Elevation
+--------------------------------------------------------------*/
+
+.z1 {
+	box-shadow: 0px 2px 4px -2px rgba(65, 75, 90, 0.2);
+	box-shadow: 0px 4px 8px -2px rgba(65, 75, 90, 0.2);
+}
+
+.z2 {
+	box-shadow: 0px 4px 6px -2px rgba(65, 75, 90, 0.1);
+	box-shadow: 0px 12px 16px -4px rgba(65, 75, 90, 0.15);
+}
+
+.z3 {
+	box-shadow: 0px 8px 8px -4px rgba(65, 75, 90, 0.05);
+	box-shadow: 0px 20px 24px -4px rgba(65, 75, 90, 0.15);
+}
+
+/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 
 body {
 	color: #303135;
-	font-family: Georgia;
+	font-family: Lexend;
 	font-size: 16px;
 	line-height: 1.6;
 	overflow-wrap: break-word;
@@ -276,7 +350,7 @@ body {
 nav,
 label,
 input {
-	font-family: sans-serif;
+	font-family: Lexend;
 	font-size: 14px
 }
 
@@ -286,7 +360,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: sans-serif;
+	font-family: Lexend;
 	line-height: 1.25;
 	color: #2d2e33;
 }
@@ -343,6 +417,66 @@ ins {
 
 big {
 	font-size: 125%;
+}
+
+.xxl {
+	font-size: 4.5rem;
+	line-height: 5rem;
+	font-weight: 400;
+}
+
+.xl {
+	font-size: 3.5rem;
+	line-height: 4.125rem;
+	font-weight: 400;
+}
+
+p.xl {
+	font-size: 1.5rem;
+	line-height: 2.25rem;
+	font-weight: 400;
+}
+
+.l {
+	font-size: 2.625rem;
+	line-height: 3.25rem;
+	font-weight: 400;
+}
+
+p.l {
+	font-size: 1.5rem;
+	line-height: 2.25rem;
+	font-weight: 400;
+}
+
+.m {
+	font-size: 1.75rem;
+	line-height: 2.25rem;
+	font-weight: 400;
+}
+
+p.m {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 400;
+}
+
+.s {
+	font-size: 1.3125rem;
+	line-height: 1.75rem;
+	font-weight: 400;
+}
+
+p.s {
+	font-size: 0.8125rem;
+	line-height: 1.25rem;
+	font-weight: 400;
+}
+
+.xs {
+	font-size: 1rem;
+	line-height: 1.3125rem;
+	font-weight: 400;
 }
 
 /*--------------------------------------------------------------
@@ -424,7 +558,7 @@ figure {
 }
 
 table {
-	font-family: sans-serif;
+	font-family: Lexend;
 	margin: 0 0 1.5em;
 	width: 100%;
 	font-size: 14px;
@@ -631,19 +765,52 @@ a:active {
 	width: 100%;
 }
 
+.container {
+	width: 100%;
+}
+
+@media (min-width: 375px) and (max-width: 760px) {
+	.container {
+		width: 375px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 760px) and (max-width: 1200px) {
+	.container {
+		width: 760px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+	.container {
+		width: 1200px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 1440px) {
+	.container {
+		width: 100%;
+		margin: 0;
+	}
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 
 .site-header {
-	text-align: center;
-	min-height: 173px;
-	padding: 50px 0;
+	min-height: 104px;
+	padding: 0 80px;
+	display: flex;
+	flex-direction: row;
 }
 
 .site-title {
 	margin: 0;
-	font-family: sans-serif;
+	font-family: Lexend;
 	font-weight: 300;
 	font-size: 40px;
 	line-height: 1.2
@@ -1050,6 +1217,55 @@ a:active {
 /* Make sure select elements fit in widgets. */
 .widget select {
 	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Grid
+--------------------------------------------------------------*/
+
+.grid {
+	display: grid;
+}
+
+.grid--full {
+	grid-column: 1fr 1fr;
+	grid-row: auto;
+}
+
+.grid--large-2 {
+	column-gap: 7.5rem;
+	grid-column: 1.25fr 1fr;
+	grid-row: auto;
+}
+
+.grid--large-2--reversed {
+	column-gap: 7.5rem;
+	grid-column: 1fr 1.25fr;
+	grid-row: auto;
+}
+
+.grid--large-3 {
+	column-gap: 4.5rem;
+	grid-column: 1fr 1fr 1fr;
+	grid-row: auto;
+}
+
+.grid--large-4 {
+	column-gap: 4.5rem;
+	grid-column: 1fr 1fr 1fr 1fr;
+	grid-row: auto;
+}
+
+.grid--large-masonry {
+	column-gap: 2.5rem;
+	row-gap: 2.5rem;
+	grid-column: 1fr 1fr;
+	grid-row: 1fr 1fr;
+}
+
+.grid--normal {
+	column-gap: 4.5rem;
+	row-gap: 7.5rem;
 }
 
 /*--------------------------------------------------------------

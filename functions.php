@@ -139,12 +139,16 @@ function scaffold_widgets_init() {
 add_action( 'widgets_init', 'scaffold_widgets_init' );
 
 /**
- * Enqueue scripts and styles.
+ * Enqueue scripts, fonts, and styles.
  */
 function scaffold_scripts() {
-	wp_enqueue_style( 'scaffold-style', get_stylesheet_uri(), array(), SCAFFOLD_VERSION );
+	wp_enqueue_style( 'scaffold-fonts', get_template_directory_uri() . '/assets/fonts/fonts.css', array(), SCAFFOLD_VERSION, true );
+
+	wp_enqueue_style( 'scaffold-style', get_stylesheet_uri(), array(), SCAFFOLD_VERSION, true );
 
 	wp_enqueue_script( 'scaffold-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), SCAFFOLD_VERSION, true );
+
+	wp_enqueue_script( 'scaffold-version', get_template_directory_uri() . '/assets/js/version.js', array(), SCAFFOLD_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

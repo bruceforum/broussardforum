@@ -15,7 +15,7 @@
 
 	<?php if ( is_front_page() && is_home() ) : ?>
 
-		<h1 class="site-title">
+		<h1 class="site-title l">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				<?php bloginfo( 'name' ); ?>
 			</a>
@@ -23,11 +23,11 @@
 
 	<?php else : ?>
 
-		<p class="site-title">
+		<h1 class="site-title l">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				<?php bloginfo( 'name' ); ?>
 			</a>
-		</p>
+		</h1>
 
 	<?php endif; ?>
 
@@ -38,7 +38,7 @@
 	if ( $description || is_customize_preview() ) :
 		?>
 
-		<p class="site-description">
+		<p class="site-description s">
 			<?php echo $description; /* WPCS: xss ok. */ ?>
 		</p>
 
