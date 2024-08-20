@@ -22,9 +22,13 @@ get_header(); ?>
 
 				<?php scaffold_thumbnail( 'scaffold-full-width' ); ?>
 
-				<header class="entry-header">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				</header><!-- .entry-header -->
+				<?php if ( !is_front_page() ) : ?>
+
+					<header class="entry-header">
+						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					</header>
+
+				<?php endif; ?>
 
 				<?php
 				if ( get_edit_post_link() ) :
@@ -45,9 +49,9 @@ get_header(); ?>
 						)
 					);
 					?>
-				</div><!-- .entry-content -->
+				</div>
 
-			</article><!-- #post-## -->
+			</article>
 
 			<?php
 
