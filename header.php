@@ -27,11 +27,21 @@
 
 <div class="site-wrapper">
 
-	<header class="site-header">
-		<?php get_template_part( 'template-parts/branding' ); ?>
-	</header><!-- .site-header -->
+	<?php if ( is_front_page() && is_home() ) : ?>
 
-	<?php get_template_part( 'template-parts/menu-1' ); ?>
+		<header class="site-header bg-primary-lg">
+			<?php get_template_part( 'template-parts/branding' ); ?>
+			<?php get_template_part( 'template-parts/menu-1' ); ?>
+		</header>
+
+	<?php else : ?>
+
+		<header class="site-header bg-primary">
+			<?php get_template_part( 'template-parts/branding' ); ?>
+			<?php get_template_part( 'template-parts/menu-1' ); ?>
+		</header>
+
+	<?php endif; ?>
 
 	<div class="site-content">
 		<div class="wrapper">

@@ -316,6 +316,14 @@ th {
 	color: #FFFFFF;
 }
 
+.bg-primary {
+	background: rgba(23, 36, 160, 1);
+}
+
+.bg-primary-lg {
+	background: linear-gradient(180deg, #1724A0 0%, rgba(28, 32, 37, 0.5) 100%);
+}
+
 /*--------------------------------------------------------------
 # Elevation
 --------------------------------------------------------------*/
@@ -806,6 +814,7 @@ a:active {
 	padding: 0 80px;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
 .site-title {
@@ -831,7 +840,6 @@ a:active {
 --------------------------------------------------------------*/
 
 .menu-1 {
-	background-color: #253e80;
 	font-size: 14px;
 	margin-bottom: 50px
 }
