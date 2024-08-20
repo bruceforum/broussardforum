@@ -23,19 +23,29 @@ const coverAdvancedControls = wp.compose.createHigherOrderComponent((BlockEdit) 
         const { ToggleControl } = wp.components;
         const { InspectorAdvancedControls } = wp.blockEditor;
         const { attributes, setAttributes, isSelected } = props;
-        return (
-            <Fragment>
-                <BlockEdit {...props} />
-                {isSelected && (props.name == 'core/cover') &&
-                    <InspectorAdvancedControls>
-                        <ToggleControl
-                            label={wp.i18n.__('Hide on mobile', 'awp')}
-                            checked={!!attributes.hideOnMobile}
-                            onChange={(newval) => setAttributes({ hideOnMobile: !attributes.hideOnMobile })}
-                        />
-                    </InspectorAdvancedControls>
-                }
-            </Fragment>
+        if (isSelected && (props.name === 'core/cover')) {
+            return wp.element.createElement(
+                Fragment,
+                null,
+                wp.element.createElement(BlockEdit, props),
+                wp.element.createElement(
+                    InspectorAdvancedControls,
+                    null,
+                    wp.element.createElement(
+                        ToggleControl,
+                        {
+                            label: wp.i18n.__('Hide on mobile', 'awp'),
+                            checked: !!attributes.hideOnMobile,
+                            onChange: (_newval) => setAttributes({ hideOnMobile: !attributes.hideOnMobile }),
+                        }
+                    )
+                )
+            );
+        }
+        wp.element.createElement(
+            Fragment,
+            null,
+            wp.element.createElement(BlockEdit, props),
         );
     };
 }, 'coverAdvancedControls');
@@ -46,7 +56,7 @@ wp.hooks.addFilter(
     coverAdvancedControls
 );
 
-function coverApplyExtraClass(extraProps, blockType, attributes) {
+function coverApplyExtraClass(extraProps, _blockType, attributes) {
     const { hideOnMobile } = attributes;
 
     if (typeof hideOnMobile !== 'undefined' && hideOnMobile) {
