@@ -42,7 +42,7 @@ const coverAdvancedControls = wp.compose.createHigherOrderComponent((BlockEdit) 
                 )
             );
         }
-        wp.element.createElement(
+        return wp.element.createElement(
             Fragment,
             null,
             wp.element.createElement(BlockEdit, props),
