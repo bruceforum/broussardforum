@@ -161,6 +161,27 @@ function scaffold_scripts() {
 add_action( 'wp_enqueue_scripts', 'scaffold_scripts' );
 
 
+function scaffold_styles() {
+	if ( function_exists( 'register_block_style' ) ) {
+		register_block_style(
+			'core/button',
+			array(
+				'name'         => 'reversed',
+				'label'        => __( 'Reversed', 'textdomain' ),
+				'is_default'   => false,
+			)
+		);
+		register_block_style(
+			'core/button',
+			array(
+				'name'         => 'ghost',
+				'label'        => __( 'Ghost', 'textdomain' ),
+				'is_default'   => false,
+			)
+		);
+	}
+}
+
 /**
  * Custom template tags for this theme.
  */
