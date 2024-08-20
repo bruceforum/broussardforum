@@ -511,7 +511,7 @@ p.s {
 }
 
 .btn--primary,
-.is-style-fill {
+.is-style-default {
 	background: rgba(23, 36, 160, 1);
 	color: #FFFFFF;
 }
