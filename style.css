@@ -819,15 +819,15 @@ a:active {
 
 .site-title {
 	margin: 0;
-	font-family: Lexend;
-	font-weight: 300;
-	font-size: 40px;
-	line-height: 1.2
+	font-family: Geogria;
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 2.5rem;
 }
 
 .site-title a {
 	text-decoration: none;
-	color: #253e80;
+	color: #FFFFFF;
 }
 
 .site-description {
