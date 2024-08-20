@@ -502,6 +502,11 @@ p.s {
 	text-transform: uppercase;
 }
 
+.btn > a,
+.wp-block-button > a {
+	background: transparent;
+}
+
 .btn--small {
 	padding: 0.5rem 1rem;
 }
