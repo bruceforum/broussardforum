@@ -23,6 +23,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 # Theme
 # Elevation
 # Typography
+# Buttons
 # Elements
 # Forms
 # Navigation
@@ -485,6 +486,45 @@ p.s {
 	font-size: 1rem;
 	line-height: 1.3125rem;
 	font-weight: 400;
+}
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+
+.btn {
+	padding: 1rem 2rem;
+	font-size: 0.875rem;
+	line-height: 1.0625rem;
+	font-weight: 700;
+}
+
+.btn--small {
+	padding: 0.5rem 1rem;
+}
+
+.btn--full {
+	padding: 1rem 7.5rem;
+}
+
+.btn--primary {
+	background: rgba(23, 36, 160, 1);
+	color: #FFFFFF;
+}
+
+.btn-secondary {
+	border: 1px solid rgba(28, 82, 173, 1);
+	color: rgba(46, 51, 57, 1);
+}
+
+.btn-reversed {
+	background: #FFFFFF;
+	color: rgba(46, 51, 57, 1);
+}
+
+.btn-ghost { 
+	border: 1px solid rgba(255, 255, 255, 1);
+	color: #FFFFFF;
 }
 
 /*--------------------------------------------------------------
