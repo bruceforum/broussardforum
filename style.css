@@ -841,17 +841,25 @@ a:active {
 --------------------------------------------------------------*/
 
 .menu-1 {
-	font-size: 1rem;
-	line-height: 1.5rem;
-	font-weight: 700;
 	margin-left: 8rem;
 }
 
-.menu-1 .site-menu ul {
+.menu-1 .menu ul {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	gap: 2rem;
+}
+
+.menu-1 .menu ul li {
+	list-style-type: none;
+}
+
+.menu-1 .menu ul li a {
+	color: #FFFFFF;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 700;
 }
 
 .menu-toggle {
