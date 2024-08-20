@@ -104,6 +104,20 @@ if ( ! function_exists( 'scaffold_setup' ) ) :
 		// Add stylesheet for the WordPress editor.
 		add_editor_style( '/assets/css/editor-style.css' );
 
+		// Add custom color pallete
+		add_theme_support( 'editor-color-palette', array(
+			array(
+				'name'  => __( 'Primary', 'scaffold' ),
+				'slug'  => 'primary',
+				'color'	=> '#1724A0',
+			),
+			array(
+				'name'  => __( 'Secondary', 'scaffold' ),
+				'slug'  => 'secondary',
+				'color' => '#1C52AD',
+			),
+		) );
+
 		// Add support for custom logo.
 		add_theme_support(
 			'custom-logo',

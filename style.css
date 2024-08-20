@@ -492,7 +492,8 @@ p.s {
 # Buttons
 --------------------------------------------------------------*/
 
-.btn {
+.btn,
+.wp-block-button {
 	padding: 1rem 2rem;
 	font-size: 0.875rem;
 	line-height: 1.0625rem;
@@ -512,17 +513,20 @@ p.s {
 	color: #FFFFFF;
 }
 
-.btn-secondary {
-	border: 1px solid rgba(28, 82, 173, 1);
+.btn-outline,
+.is-style-outline {
+	border: 1px solid rgb(28, 82, 173);
 	color: rgba(46, 51, 57, 1);
 }
 
-.btn-reversed {
+.btn-reversed,
+.is-style-reversed {
 	background: #FFFFFF;
 	color: rgba(46, 51, 57, 1);
 }
 
-.btn-ghost { 
+.btn-ghost,
+.is-style-ghost { 
 	border: 1px solid rgba(255, 255, 255, 1);
 	color: #FFFFFF;
 }
