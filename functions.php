@@ -74,27 +74,7 @@ if ( ! function_exists( 'scaffold_setup' ) ) :
 		);
 
 		// Set up block styles
-		if ( function_exists( 'unregister_block_style' ) ) {
-			unregister_block_style('core/button', 'fill');
-			unregister_block_style('core/button', 'outline');
-		}
 		if ( function_exists( 'register_block_style' ) ) {
-			register_block_style(
-				'core/button',
-				array(
-					'name'         => 'default',
-					'label'        => __( 'Default', 'textdomain' ),
-					'is_default'   => true,
-				)
-			);
-			register_block_style(
-				'core/button',
-				array(
-					'name'         => 'outline',
-					'label'        => __( 'Outline', 'textdomain' ),
-					'is_default'   => false,
-				)
-			);
 			register_block_style(
 				'core/button',
 				array(

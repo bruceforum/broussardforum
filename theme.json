@@ -1,0 +1,21 @@
+{
+	"version": 2,
+	"styles": {
+		"blocks": {
+			"core/button": {
+				"variations": {
+					"outline": {
+						"spacing": {
+							"padding": {
+								"top": "0",
+								"bottom": "0",
+								"right": "0",
+								"left": "0"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
