@@ -13,16 +13,13 @@
 
 ?>
 
-		</div><!-- .wrapper -->
 	</div><!-- .site-content -->
 
 	<footer class="site-footer">
-		<div class="wrapper">
-			<div class="site-info">
-				Copyright
-			</div><!-- .site-info -->
-		</div><!-- .wrapper -->
-	</footer><!-- .site-footer -->
+		<div class="site-info">
+			Copyright
+		</div>
+	</footer>
 
 <?php wp_footer(); ?>
 

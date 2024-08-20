@@ -789,8 +789,6 @@ a:active {
 .clear:after,
 .entry-content:before,
 .entry-content:after,
-.wrapper:before,
-.wrapper:after,
 .navigation:before,
 .navigation:after {
 	content: "";
@@ -800,7 +798,6 @@ a:active {
 
 .clear:after,
 .entry-content:after,
-.wrapper:after,
 .navigation:after {
 	clear: both;
 }
@@ -808,12 +805,6 @@ a:active {
 /*--------------------------------------------------------------
 # Structure
 --------------------------------------------------------------*/
-
-.wrapper {
-	max-width: 1040px;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 .site-content {
 	padding-bottom: 25px
