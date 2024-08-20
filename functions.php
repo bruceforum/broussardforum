@@ -116,6 +116,16 @@ if ( ! function_exists( 'scaffold_setup' ) ) :
 				'slug'  => 'secondary',
 				'color' => '#1C52AD',
 			),
+			array(
+				'name'  => __( 'Font', 'scaffold' ),
+				'slug'  => 'font',
+				'color'	=> '#2E3339',
+			),
+			array(
+				'name'  => __( 'Font Reversed', 'scaffold' ),
+				'slug'  => 'font-reversed',
+				'color'	=> '#FFFFFF',
+			),
 		) );
 
 		// Add support for custom logo.
