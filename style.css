@@ -860,6 +860,7 @@ a:active {
 	font-size: 1rem;
 	line-height: 1.5rem;
 	font-weight: 700;
+	text-decoration: none;
 }
 
 .menu-toggle {

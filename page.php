@@ -24,9 +24,13 @@ get_header(); ?>
 
 				<?php scaffold_thumbnail( 'scaffold-blog' ); ?>
 
+				<?php if ( !is_front_page() ) : ?>
+
 				<header class="entry-header">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				</header><!-- .entry-header -->
+				</header>
+
+				<?php endif; ?>
 
 				<?php
 				if ( get_edit_post_link() ) :
@@ -47,9 +51,9 @@ get_header(); ?>
 						)
 					);
 					?>
-				</div><!-- .entry-content -->
+				</div>
 
-			</article><!-- #post-## -->
+			</article>
 
 			<?php
 
@@ -61,7 +65,7 @@ get_header(); ?>
 		endwhile;
 		?>
 
-	</div><!-- .content-area -->
+	</div>
 
 <?php
 get_sidebar();
