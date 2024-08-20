@@ -5,12 +5,18 @@
 			"core/button": {
 				"variations": {
 					"outline": {
+                        "border": {
+                            "color": false,
+                            "radius": false,
+                            "style": false,
+                            "width": false
+                        },
 						"spacing": {
 							"padding": {
-								"top": "0",
-								"bottom": "0",
-								"right": "0",
-								"left": "0"
+								"top": false,
+								"bottom": false,
+								"right": false,
+								"left": false
 							}
 						}
 					}
