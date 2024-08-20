@@ -181,6 +181,7 @@ function scaffold_styles() {
 		);
 	}
 }
+add_action( 'wp_enqueue_scripts', 'scaffold_styles' );
 
 /**
  * Custom template tags for this theme.
