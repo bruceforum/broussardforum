@@ -191,6 +191,8 @@ function scaffold_scripts() {
 	if ( class_exists( 'WooCommerce' ) ) {
 		wp_enqueue_style( 'scaffold-woocommerce', get_template_directory_uri() . '/assets/css/woocommerce.css', 'scaffold-style', SCAFFOLD_VERSION );
 	}
+
+	wp_dequeue_style( 'classic-theme-styles' );
 }
 add_action( 'wp_enqueue_scripts', 'scaffold_scripts' );
 
