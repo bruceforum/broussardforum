@@ -27,7 +27,7 @@
 
 <div class="site-wrapper">
 
-	<?php if ( is_front_page() && is_home() ) : ?>
+	<?php if ( is_front_page() ) : ?>
 
 		<header class="site-header bg-primary-lg">
 			<?php get_template_part( 'template-parts/branding' ); ?>
