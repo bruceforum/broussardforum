@@ -207,6 +207,13 @@ function scaffold_scripts() {
 add_action( 'wp_enqueue_scripts', 'scaffold_scripts' );
 
 /**
+ * Custom blocks
+ */
+add_action('enqueue_block_editor_assets', function() {
+	wp_enqueue_script('scaffold-custom-blocks', get_template_directory_uri() . '/assets/js/custom-blocks.js', ['wp-edit-post']);
+});
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
