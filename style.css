@@ -532,6 +532,12 @@ p.s {
 	color: #FFFFFF;
 }
 
+.wp-block-button__link,
+:where(.wp-block-button__link) {
+	color: inherit;
+	padding: 0;
+}
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
