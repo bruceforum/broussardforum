@@ -493,6 +493,8 @@ function scaffold_breadcrumbs()
 
 		// 404 page
 		echo '<li class="item-current item">' . 'Error 404' . '</li>';
+	} else {
+		echo '<li class="item-current item">' . 'Error 500' . '</li>';
 	}
 
 	// End breadcrumb
