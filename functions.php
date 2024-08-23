@@ -488,7 +488,7 @@ function scaffold_breadcrumbs()
 	} else if (is_home()) {
 
 		// posts page
-		echo '<li class="item-current item">' . get_the_title() . '</li>';
+		echo '<li class="item-current item">' . apply_filters( 'the_title', get_the_title( get_option( 'page_for_posts' ) ) ) . '</li>';
 	} else if (is_search()) {
 
 		// Search results page
