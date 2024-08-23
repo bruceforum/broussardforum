@@ -16,7 +16,7 @@
 
 get_header(); ?>
 
-<div class="content-area">
+<div class="content-area container">
 
 	<?php
 	if ( have_posts() ) :
@@ -57,5 +57,4 @@ get_header(); ?>
 </div><!-- .content-area -->
 
 <?php
-get_sidebar();
 get_footer();
