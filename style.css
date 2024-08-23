@@ -993,11 +993,6 @@ a:active {
 # Content
 --------------------------------------------------------------*/
 
-.content-area {
-	width: 600px;
-	float: left;
-}
-
 .post-thumbnail {
 	margin-bottom: 16px
 }
@@ -1688,7 +1683,6 @@ object {
 @media screen and (max-width: 1040px) {
 
 	.site-content,
-	.content-area,
 	.sidebar-1 {
 		width: 100%;
 		float: none
