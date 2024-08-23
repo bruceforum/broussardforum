@@ -1414,11 +1414,55 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 # Footer
 --------------------------------------------------------------*/
 
+.site-footer {
+	background: #2E3339;
+	padding-top: 4rem;
+	padding-bottom: 2.5rem;
+}
+
 .site-footer .site-info {
-	border-top: 1px solid #ccc;
-	padding: 25px 0;
-	font-size: 14px;
-	text-align: right;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 2.75rem;
+}
+
+.site-footer .site-info h2 {
+	font-family: Georgia, serif;
+	font-size: 2.625rem;
+	line-height: 3.25rem;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+.site-footer .site-map {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+}
+
+.site-footer .site-map .site-map-category {
+	display: flex;
+	flex-direction: column;
+}
+
+.site-footer .site-map .site-map-category h3 {
+	font-family: Calibri, sans-serif;
+	font-size: 1.75rem;
+	line-height: 2.25rem;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+.site-footer .site-map .site-map-category a {
+	font-family: Calibri, sans-serif;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+.site-footer .site-map .site-map-category ul li {
+	list-style-type: none;
 }
 
 /*--------------------------------------------------------------

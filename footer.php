@@ -16,8 +16,31 @@
 	</div><!-- .site-content -->
 
 	<footer class="site-footer">
-		<div class="site-info">
-			Copyright
+		<div class="container">
+			<div class="site-info">
+				<h2>Bruce Broussard</h2>
+			</div>
+			<div class="site-map">
+				<div class="site-map-category">
+					<h3>Group</h3>
+					<ul>
+						<li>
+							<a>Page</a>
+						</li>
+					</ul>
+					<a>SPECIAL LINK</a>
+				</div>
+			</div>
+			<hr />
+			<div class="site-links">
+				<div class="legal-links">
+					<a>Privacy Policy</a>
+					<a>Cookie Policy</a>
+					<a>DMCA & Reporting Piracy</a>
+					<a>Legal Notices</a>
+					<a>©Bruce Broussard 2024</a>
+				</div>
+			</div>
 		</div>
 	</footer>
 
