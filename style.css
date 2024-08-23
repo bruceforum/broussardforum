@@ -1075,15 +1075,15 @@ ul.wp-block-latest-posts>li {
 }
 
 ul.wp-block-latest-posts>li>.wp-block-latest-posts__featured-image {
-	grid-area: "a";
+	grid-area: a;
 }
 
 ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-title {
-	grid-area: "c";
+	grid-area: c;
 }
 
 ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-date {
-	grid-area: "b";
+	grid-area: b;
 }
 
 /*--------------------------------------------------------------
