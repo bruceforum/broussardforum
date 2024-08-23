@@ -1090,26 +1090,32 @@ a:active {
 ul.wp-block-latest-posts>li {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-areas: "a" "b" "c" "d";
+	grid-template-areas: "image" "date" "title";
+}
+
+ul.wp-block-latest-posts.alternative>li {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: "title" "date" "excerpt";
 }
 
 ul.wp-block-latest-posts>li>.wp-block-latest-posts__featured-image {
-	grid-area: a;
+	grid-area: image;
 	text-align: center;
 }
 
 ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-title {
-	grid-area: c;
+	grid-area: title;
 }
 
 ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-date {
-	grid-area: b;
+	grid-area: date;
 	padding-top: 0.75rem;
 	padding-bottom: 0.5rem;
 }
 
 ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
-	grid-area: d;
+	grid-area: excerpt;
 }
 
 /*--------------------------------------------------------------
