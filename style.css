@@ -1469,10 +1469,12 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 .site-footer .site-map .site-map-category ul {
 	padding: 0;
 	margin: 0;
+	margin-bottom: 0.25rem;
 }
 
 .site-footer .site-map .site-map-category ul li {
 	list-style-type: none;
+	margin-bottom: 0.5rem;
 }
 
 .site-footer hr {
