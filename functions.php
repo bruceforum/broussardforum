@@ -457,7 +457,7 @@ function scaffold_breadcrumbs()
 
 			echo '<li class="item item-current">' . post_type_archive_title() . '</li>';
 		}
-	} else if (is_page()) {
+	} else if (is_page() || is_home()) {
 
 		// Standard page
 		if ($post->post_parent) {
@@ -493,8 +493,6 @@ function scaffold_breadcrumbs()
 
 		// 404 page
 		echo '<li class="item-current item">' . 'Error 404' . '</li>';
-	} else {
-		echo '<li class="item-current item">' . 'Error 500' . '</li>';
 	}
 
 	// End breadcrumb
