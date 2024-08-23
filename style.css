@@ -1089,12 +1089,14 @@ a:active {
 
 ul.wp-block-latest-posts>li {
 	display: grid;
+	grid-auto-rows: min-content;
 	grid-template-columns: 1fr;
 	grid-template-areas: "image" "date" "title";
 }
 
 ul.wp-block-latest-posts.alternative>li {
 	display: grid;
+	grid-auto-rows: min-content;
 	grid-template-columns: 1fr;
 	grid-template-areas: "title" "date" "excerpt";
 }
