@@ -1184,6 +1184,8 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 	display: flex;
 	flex-direction: row;
 	gap: 0.75rem;
+	padding-top: 1.5rem;
+	padding-bottom: 0.75rem;
 }
 
 .breadcrumbs li {
