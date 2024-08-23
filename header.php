@@ -44,3 +44,4 @@
 	<?php endif; ?>
 
 	<div class="site-content">
+		<?php scaffold_breadcrumbs(); ?>
