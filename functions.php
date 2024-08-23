@@ -102,7 +102,7 @@ if ( ! function_exists( 'scaffold_setup' ) ) :
 		add_image_size( 'scaffold-full-width', 1040 );
 
 		// Add stylesheet for the WordPress editor.
-		add_editor_style( '/assets/css/editor-style.css' );
+		add_editor_style( 'style.css' );
 
 		// Add custom color pallete
 		add_theme_support( 'editor-color-palette', array(
