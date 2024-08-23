@@ -289,22 +289,6 @@ function scaffold_dismiss_admin_notice()
 add_action('admin_init', 'scaffold_dismiss_admin_notice');
 
 /**
- * Create a custom query for the Press page
- */
-add_filter('query_vars', function ($vars) {
-	$vars[] = 'qls'; // As query-loop-search.
-	return $vars;
-});
-
-add_action( 'pre_get_posts', function( \WP_Query $q ) {
-	get_query_var('qls');
-    if ( $q->is_search() && !empty(get_query_var('qls'))) {
-		$q->set( 'category_name', 'press' );
-		$q->set( 's', get_query_var('qls') );
-    }
-} );
-
-/**
  * Create the Breadcrumbs
  */
 function scaffold_breadcrumbs()
