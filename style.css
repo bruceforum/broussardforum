@@ -1121,7 +1121,8 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 }
 
 .wp-block-pullquote > blockquote {
-	border-width: 2px, 0px, 2px, 0px;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
 	border-style: solid;
 	border-color: #87B1D7;
 	padding-top: 1.5rem;
@@ -1132,6 +1133,7 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 1.75rem;
 	line-height: 2.25rem;
+	margin-bottom: 0.75rem;
 }
 
 .wp-block-pullquote > blockquote > cite {
