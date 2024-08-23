@@ -1121,6 +1121,7 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 }
 
 .wp-block-pullquote > blockquote {
+	border-width: 0;
 	border-top-width: 2px;
 	border-bottom-width: 2px;
 	border-style: solid;
