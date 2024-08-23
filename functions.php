@@ -288,6 +288,22 @@ function scaffold_dismiss_admin_notice()
 }
 add_action('admin_init', 'scaffold_dismiss_admin_notice');
 
+/**
+ * Create a custom query for the Press page
+ */
+add_filter('query_vars', function ($vars) {
+	$vars[] = 'qls'; // As query-loop-search.
+	return $vars;
+});
+add_action('pre_get_posts', function (\WP_Query $q) {
+	$qls = $q->get('qls');
+	if (empty($qls) || is_admin() || $q->is_main_query()) {
+		return;
+	}
+	if ($q->is_search() && ':query-loop-search' === trim($q->get('s'))) {
+		$q->set('s', $qls);
+	}
+});
 
 /**
  * Create the Breadcrumbs
@@ -488,7 +504,7 @@ function scaffold_breadcrumbs()
 	} else if (is_home()) {
 
 		// posts page
-		echo '<li class="item-current item">' . apply_filters( 'the_title', get_the_title( get_option( 'page_for_posts' ) ) ) . '</li>';
+		echo '<li class="item-current item">' . apply_filters('the_title', get_the_title(get_option('page_for_posts'))) . '</li>';
 	} else if (is_search()) {
 
 		// Search results page
