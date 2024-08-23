@@ -519,6 +519,10 @@ h6 {
 	padding-bottom: 3.75rem;
 }
 
+.pb-40 {
+	padding-bottom: 2.5rem;
+}
+
 /*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
@@ -1102,6 +1106,10 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-date {
 	grid-area: b;
 	padding-top: 0.75rem;
 	padding-bottom: 0.5rem;
+}
+
+ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
+	grid-area: d;
 }
 
 /*--------------------------------------------------------------
