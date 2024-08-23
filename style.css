@@ -889,7 +889,7 @@ a:active {
 		margin: 0 auto;
 	}
 
-	.container > .container {
+	.container .container {
 		width: 375px;
 		margin: 0 auto;
 	}
@@ -904,7 +904,7 @@ a:active {
 		margin: 0 auto;
 	}
 
-	.container > .container {
+	.container .container {
 		width: 760px;
 		margin: 0 auto;
 	}
@@ -919,7 +919,7 @@ a:active {
 		margin: 0;
 	}
 
-	.container > .container {
+	.container .container {
 		width: 1200px;
 		margin: 0 auto;
 	}
