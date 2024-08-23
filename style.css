@@ -1076,6 +1076,7 @@ ul.wp-block-latest-posts>li {
 
 ul.wp-block-latest-posts>li>.wp-block-latest-posts__featured-image {
 	grid-area: a;
+	text-align: center;
 }
 
 ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-title {
@@ -1084,6 +1085,8 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-title {
 
 ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-date {
 	grid-area: b;
+	padding-top: 0.75rem;
+	padding-bottom: 0.5rem;
 }
 
 /*--------------------------------------------------------------
