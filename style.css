@@ -1180,6 +1180,17 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 ## Content Navigation
 --------------------------------------------------------------*/
 
+.breadcrumbs {
+	display: flex;
+	flex-direction: row;
+	gap: 0.75rem;
+}
+
+.breadcrumbs li {
+	list-style-type: none;
+	display: block;
+}
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;

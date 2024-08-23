@@ -305,10 +305,10 @@ function scaffold_breadcrumbs()
 	$custom_taxonomy  = ''; // If you have custom taxonomy place it here
 
 	$defaults = array(
-		'seperator'   =>  '»',
-		'id'          =>  'ah-breadcrumb',
-		'classes'     =>  'ah-breadcrumb',
-		'home_title'  =>  esc_html__('Home', '')
+		'seperator'   =>  '>',
+		'id'          =>  '',
+		'classes'     =>  'breadcrumbs container',
+		'home_title'  =>  esc_html__('Homepage', '')
 	);
 
 	$sep  = '<li class="seperator">' . esc_html($defaults['seperator']) . '</li>';
