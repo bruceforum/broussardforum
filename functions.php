@@ -457,7 +457,7 @@ function scaffold_breadcrumbs()
 
 			echo '<li class="item item-current">' . post_type_archive_title() . '</li>';
 		}
-	} else if (is_page() || is_home()) {
+	} else if (is_page()) {
 
 		// Standard page
 		if ($post->post_parent) {
@@ -485,6 +485,10 @@ function scaffold_breadcrumbs()
 			// Just display current page if not parents
 			echo '<li class="item-current item">' . get_the_title() . '</li>';
 		}
+	} else if (is_home()) {
+
+		// posts page
+		echo '<li class="item-current item">' . get_the_title() . '</li>';
 	} else if (is_search()) {
 
 		// Search results page
