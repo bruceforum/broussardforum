@@ -57,7 +57,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust:     100%;
+	-ms-text-size-adjust: 100%;
 }
 
 body {
@@ -529,8 +529,8 @@ h6 {
 	text-transform: uppercase;
 }
 
-.btn > a,
-.wp-block-button > a {
+.btn>a,
+.wp-block-button>a {
 	background: transparent;
 }
 
@@ -561,7 +561,7 @@ h6 {
 }
 
 .btn-ghost,
-.is-style-ghost { 
+.is-style-ghost {
 	border: 1px solid #FFFFFF;
 	color: #FFFFFF;
 }
@@ -581,12 +581,14 @@ html {
 
 *,
 *:before,
-*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 	box-sizing: inherit;
 }
 
 body {
-	background-color: #fff; /* Fallback for when there is no custom background color defined. */
+	background-color: #fff;
+	/* Fallback for when there is no custom background color defined. */
 }
 
 blockquote:before,
@@ -627,8 +629,8 @@ ol {
 	list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
 	margin-bottom: 0;
 }
 
@@ -641,13 +643,16 @@ dd {
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
 	vertical-align: bottom;
 }
 
 figure {
-	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+	margin: 1em 0;
+	/* Extra wide images within figure tags don't overflow the content area. */
 }
 
 table {
@@ -858,6 +863,7 @@ a:active {
 }
 
 @media (min-width: 375px) and (max-width: 760px) {
+
 	.container,
 	.wp-block-cover__inner-container,
 	.wp-block-cover .wp-block-cover__inner-container,
@@ -868,6 +874,7 @@ a:active {
 }
 
 @media (min-width: 760px) and (max-width: 1200px) {
+
 	.container,
 	.wp-block-cover__inner-container,
 	.wp-block-cover .wp-block-cover__inner-container,
@@ -878,6 +885,7 @@ a:active {
 }
 
 @media (min-width: 1200px) and (max-width: 1440px) {
+
 	.container,
 	.wp-block-cover__inner-container,
 	.wp-block-cover .wp-block-cover__inner-container,
@@ -888,6 +896,7 @@ a:active {
 }
 
 @media (min-width: 1440px) {
+
 	.container,
 	.wp-block-cover__inner-container,
 	.wp-block-cover .wp-block-cover__inner-container,
@@ -992,6 +1001,7 @@ a:active {
 	font-size: 14px;
 	color: #929292
 }
+
 .entry-meta a {
 	color: #929292;
 	text-decoration: none
@@ -1016,6 +1026,7 @@ a:active {
 .entry-footer span {
 	display: block;
 }
+
 .entry-footer a {
 	text-decoration: none;
 	color: #303135
@@ -1057,6 +1068,24 @@ a:active {
 	display: inline;
 }
 
+ul.wp-block-latest-posts>li {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: "a" "b" "c" "d";
+}
+
+ul.wp-block-latest-posts>li>.wp-block-latest-posts__featured-image {
+	grid-area: "a";
+}
+
+ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-title {
+	grid-area: "c";
+}
+
+ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-date {
+	grid-area: "b";
+}
+
 /*--------------------------------------------------------------
 ## Archives
 --------------------------------------------------------------*/
@@ -1084,7 +1113,7 @@ a:active {
 ## Cover
 --------------------------------------------------------------*/
 
-.entry-content > .wp-block-cover:first-child {
+.entry-content>.wp-block-cover:first-child {
 	margin-top: -104px;
 	height: 75vh;
 }
@@ -1115,9 +1144,10 @@ a:active {
 	color: #303135;
 }
 
-.post-navigation .nav-links a  {
+.post-navigation .nav-links a {
 	font-weight: bold
 }
+
 .post-navigation .nav-links a span {
 	text-decoration: underline;
 	font-weight: normal
@@ -1152,7 +1182,7 @@ a:active {
 	list-style: none;
 }
 
-.comments-area .children .comment-body  {
+.comments-area .children .comment-body {
 	padding: 0 0 25px 0;
 	margin: 25px 0;
 }
@@ -1172,6 +1202,7 @@ a:active {
 .comment-meta a {
 	text-decoration: none
 }
+
 .comment-author a {
 	color: #303135;
 	text-decoration: none;
@@ -1222,6 +1253,7 @@ a:active {
 	float: left;
 	margin-right: 5%;
 }
+
 .comment-form-email {
 	width: 47.5%;
 	float: left;
@@ -1260,11 +1292,11 @@ a:active {
 --------------------------------------------------------------*/
 
 .flex-gap-12 {
-	gap: 0.75rem;	
+	gap: 0.75rem;
 }
 
 .flex-gap-40 {
-	gap: 2.5rem;	
+	gap: 2.5rem;
 }
 
 /*--------------------------------------------------------------
@@ -1337,8 +1369,10 @@ a:active {
 --------------------------------------------------------------*/
 
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
-.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+.infinite-scroll .posts-navigation,
+/* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer {
+	/* Theme Footer (when set to scrolling) */
 	display: none;
 }
 
@@ -1464,8 +1498,8 @@ object {
 		color: white;
 		margin: 0 auto;
 		width: 100%;
-    border: 0;
-    border-radius: 0;
+		border: 0;
+		border-radius: 0;
 	}
 
 	.toggled .menu-toggle {
@@ -1481,7 +1515,7 @@ object {
 
 	.menu-1 li {
 		float: none;
-	  width: 100%;
+		width: 100%;
 	}
 
 	.menu-1 ul ul {
@@ -1491,8 +1525,8 @@ object {
 		display: none
 	}
 
-	.menu-1 ul li:hover > ul,
-	.menu-1 ul li.focus > ul {
+	.menu-1 ul li:hover>ul,
+	.menu-1 ul li.focus>ul {
 		display: block;
 	}
 
@@ -1504,14 +1538,15 @@ object {
 		left: auto
 	}
 
-	.menu-1 ul ul li:hover > ul,
-	.menu-1 ul ul li.focus > ul {
+	.menu-1 ul ul li:hover>ul,
+	.menu-1 ul ul li.focus>ul {
 		left: auto;
 	}
 
 }
 
 @media screen and (max-width: 1040px) {
+
 	.site-content,
 	.content-area,
 	.sidebar-1 {
@@ -1524,7 +1559,7 @@ object {
 		padding: 0 20px;
 	}
 
-	.menu-1 .nav-menu > li:first-child {
-	  margin-left: 0;
+	.menu-1 .nav-menu>li:first-child {
+		margin-left: 0;
 	}
 }
