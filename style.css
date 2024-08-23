@@ -1415,6 +1415,7 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 --------------------------------------------------------------*/
 
 .site-footer {
+	clear: both;
 	background: #2E3339;
 	padding-top: 4rem;
 	padding-bottom: 2.5rem;
@@ -1451,6 +1452,8 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 	line-height: 2.25rem;
 	font-weight: 400;
 	color: #FFFFFF;
+	margin: 0;
+	margin-bottom: 0.75rem;
 }
 
 .site-footer .site-map .site-map-category a {
@@ -1459,6 +1462,12 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 	line-height: 1.75rem;
 	font-weight: 400;
 	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.site-footer .site-map .site-map-category ul {
+	padding: 0;
+	margin: 0;
 }
 
 .site-footer .site-map .site-map-category ul li {
