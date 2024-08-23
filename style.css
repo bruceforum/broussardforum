@@ -1433,6 +1433,7 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 	line-height: 3.25rem;
 	font-weight: 400;
 	color: #FFFFFF;
+	margin: 0;
 }
 
 .site-footer .site-map {
@@ -1472,6 +1473,11 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 
 .site-footer .site-map .site-map-category ul li {
 	list-style-type: none;
+}
+
+.site-footer hr {
+	margin: 2rem 0;
+	background-color: #87B1D7;
 }
 
 /*--------------------------------------------------------------
