@@ -295,15 +295,14 @@ add_filter('query_vars', function ($vars) {
 	$vars[] = 'qls'; // As query-loop-search.
 	return $vars;
 });
-add_action('pre_get_posts', function (\WP_Query $q) {
-	$qls = $q->get('qls');
-	if (empty($qls) || is_admin() || $q->is_main_query()) {
-		return;
-	}
-	if ($q->is_search() && ':query-loop-search' === trim($q->get('s'))) {
-		$q->set('s', $qls);
-	}
-});
+
+add_action( 'pre_get_posts', function( \WP_Query $q ) {
+	get_query_var('qls');
+    if ( $q->is_search() && !empty(get_query_var('qls'))) {
+		$q->set( 'category_name', 'press' );
+		$q->set( 's', get_query_var('qls') );
+    }
+} );
 
 /**
  * Create the Breadcrumbs
