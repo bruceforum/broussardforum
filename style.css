@@ -1132,6 +1132,7 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 	gap: 0.75rem;
 	padding-top: 1.5rem;
 	padding-bottom: 0.75rem;
+	padding-left: 0;
 }
 
 .breadcrumbs li {
