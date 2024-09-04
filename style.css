@@ -519,6 +519,14 @@ h6 {
 	padding-bottom: 3.75rem;
 }
 
+.pt-60 {
+	padding-top: 3.75rem;
+}
+
+.pb-60 {
+	padding-bottom: 3.75rem;
+}
+
 .pb-40 {
 	padding-bottom: 2.5rem;
 }
@@ -532,9 +540,8 @@ h6 {
 }
 
 .pl-0 {
-	padding-left: 1rem;
+	padding-left: 0rem;
 }
-
 
 /*--------------------------------------------------------------
 # Opacity
