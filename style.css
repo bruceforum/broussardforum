@@ -892,6 +892,10 @@ a:active {
 	margin: 0 auto;
 }
 
+.container > wp-block-media-text__content {
+	padding-left: 0;
+}
+
 .icon {
 	min-width: 3rem;
 	min-height: 3rem;
