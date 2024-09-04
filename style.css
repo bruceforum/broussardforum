@@ -527,6 +527,10 @@ h6 {
 	padding-bottom: 1.5rem;
 }
 
+.pr-16 {
+	padding-right: 1rem;
+}
+
 /*--------------------------------------------------------------
 # Opacity
 --------------------------------------------------------------*/
@@ -1328,6 +1332,10 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 
 .flex-gap-12 {
 	gap: 0.75rem;
+}
+
+.flex-gap-16 {
+	gap: 1rem;
 }
 
 .flex-gap-40 {
