@@ -1117,7 +1117,7 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 ## Cover
 --------------------------------------------------------------*/
 
-.entry-content>.wp-block-cover:first-child {
+.entry-content.front-page>.wp-block-cover:first-child {
 	margin-top: -104px;
 	height: 75vh;
 }
@@ -1131,7 +1131,7 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 	flex-direction: row;
 	gap: 0.75rem;
 	padding-top: 1.5rem;
-	padding-bottom: 0.75rem;
+	padding-bottom: 1.5rem;
 	padding-left: 0;
 }
 
