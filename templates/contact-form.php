@@ -20,7 +20,7 @@ get_header(); ?>
 
 			<article <?php post_class(); ?>>
 
-				<div class="entry-content">
+				<div class="contact-content">
 					<?php
 					the_content();
 

@@ -519,8 +519,16 @@ h6 {
 	padding-bottom: 3.75rem;
 }
 
+.pt-72 {
+	padding-top: 4.5rem;
+}
+
 .pt-60 {
 	padding-top: 3.75rem;
+}
+
+.pb-72 {
+	padding-bottom: 4.5rem;
 }
 
 .pb-60 {
