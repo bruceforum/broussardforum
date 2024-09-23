@@ -1134,6 +1134,10 @@ a:active {
 	margin: 0 0 3em;
 }
 
+.hentry:last-child {
+	margin: 0;
+}
+
 .byline,
 .updated:not(.published) {
 	display: none;
@@ -1198,6 +1202,10 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 	font-family: Calibri, sans-serif;
 	font-size: 1rem;
 	line-height: 1.5rem;
+}
+
+.contact-content p {
+	margin: 0;
 }
 
 /*--------------------------------------------------------------
