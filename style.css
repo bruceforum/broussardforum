@@ -637,6 +637,8 @@ h6 {
 }
 
 .wpcf7-submit {
+	font-family: Calibri, sans-serif !important;
+	text-transform: uppercase !important;
 	width: unset !important;
 	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem !important;
 	background: #323B4A !important;
