@@ -827,6 +827,10 @@ textarea {
 	width: 100%;
 }
 
+input {
+	max-width: 100%;
+}
+
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -943,15 +947,15 @@ a:active {
 }
 
 .flex-33 > * {
-	width: calc(33% - 1rem);
-	flex-basis: calc(33% - 1rem);
+	width: calc(33% - 2.5rem);
+	flex-basis: calc(33% - 2.5rem);
 	flex-grow: 0;
 	flex-shrink: 0;
 }
 
 .flex-50 > * {
-	width: calc(50% - .75rem);
-	flex-basis: calc(50% - .75rem);
+	width: calc(50% - 2.5rem);
+	flex-basis: calc(50% - 2.5rem);
 	flex-grow: 0;
 	flex-shrink: 0;
 }
