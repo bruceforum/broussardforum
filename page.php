@@ -26,9 +26,9 @@ get_header(); ?>
 
 				<?php if ( !is_front_page() ) : ?>
 
-					<header class="container entry-header">
-						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-					</header>
+					<!-- <header class="entry-header">
+						<?php // the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					</header> -->
 
 				<?php endif; ?>
 
