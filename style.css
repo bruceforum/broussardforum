@@ -1712,7 +1712,6 @@ object {
 		flex-direction: column;
 	}
 
-	.wp-block-media-text.has-media-on-the-right 
 	.wp-block-media-text.has-media-on-the-right > .wp-block-media-text__content {
 		grid-column: 1;
 		grid-row: 2;
@@ -1751,7 +1750,6 @@ object {
 		flex-direction: column;
 	}
 
-	.wp-block-media-text.has-media-on-the-right 
 	.wp-block-media-text.has-media-on-the-right > .wp-block-media-text__content {
 		grid-column: 1;
 		grid-row: 2;
