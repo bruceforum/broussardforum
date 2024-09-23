@@ -1727,7 +1727,7 @@ object {
 		flex-direction: column;
 	}
 	ul.wp-block-latest-posts__list > li {
-		width: 100%;
+		width: 100% !important;
 	}
 }
 
