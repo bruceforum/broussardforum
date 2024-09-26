@@ -1773,8 +1773,8 @@ object {
 	}
 	.site-header {
 		grid-template-areas: "a b"
-			"c";
-		grid-template-columns: auto 1fr;
+			"c c";
+		grid-template-columns: 1fr auto;
 	}
 	.menu-1 {
 		grid-area: c;
