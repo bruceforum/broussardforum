@@ -1707,7 +1707,8 @@ object {
 	.container,
 	.wp-block-cover__inner-container,
 	.wp-block-cover .wp-block-cover__inner-container,
-	.wp-block-cover-image .wp-block-cover__inner-container {
+	.wp-block-cover-image .wp-block-cover__inner-container,
+	.menu-header-menu-container {
 		width: 375px;
 	}
 
@@ -1744,7 +1745,8 @@ object {
 	.container,
 	.wp-block-cover__inner-container,
 	.wp-block-cover .wp-block-cover__inner-container,
-	.wp-block-cover-image .wp-block-cover__inner-container {
+	.wp-block-cover-image .wp-block-cover__inner-container,
+	.menu-header-menu-container {
 		width: 760px;
 	}
 
@@ -1775,9 +1777,16 @@ object {
 		grid-template-areas: "a b"
 			"c c";
 		grid-template-columns: 1fr auto;
+		grid-template-rows: 1fr 0;
 	}
 	.menu-1 {
 		grid-area: c;
+		position: absolute;
+		left: -80px;
+		right: -80px;
+		top: 0;
+		margin: 0;
+		overflow: hidden;
 	}
 	.menu-toggle {
 		display: block;
