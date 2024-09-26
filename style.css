@@ -1707,8 +1707,7 @@ object {
 	.container,
 	.wp-block-cover__inner-container,
 	.wp-block-cover .wp-block-cover__inner-container,
-	.wp-block-cover-image .wp-block-cover__inner-container,
-	.menu-header-menu-container {
+	.wp-block-cover-image .wp-block-cover__inner-container {
 		width: 375px;
 	}
 
@@ -1745,8 +1744,7 @@ object {
 	.container,
 	.wp-block-cover__inner-container,
 	.wp-block-cover .wp-block-cover__inner-container,
-	.wp-block-cover-image .wp-block-cover__inner-container,
-	.menu-header-menu-container {
+	.wp-block-cover-image .wp-block-cover__inner-container {
 		width: 760px;
 	}
 
@@ -1787,10 +1785,17 @@ object {
 		top: 0;
 		margin: 0;
 		overflow: hidden;
+		padding: 0 80px;
 	}
 	.menu-toggle {
 		display: block;
 		grid-area: b;
+	}
+	.menu-1 ul.menu {
+		padding: 0;
+	}
+	.menu-1 ul.menu li a {
+		color:rgba(23, 36, 160, 1);
 	}
 }
 
