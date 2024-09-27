@@ -989,14 +989,9 @@ a:active {
 	z-index: 99;
 	height: 104px;
 	padding: 0 80px;
+	display: flex;
+	flex-direction: row;
 	align-items: center;
-	display: grid;
-	grid-template-columns: auto 1fr;
-	grid-template-areas: "a b b";
-}
-
-.site-branding {
-	grid-area: a;
 }
 
 .site-title {
@@ -1023,7 +1018,6 @@ a:active {
 --------------------------------------------------------------*/
 
 .menu-1 {
-	grid-area: b;
 	margin-left: 8rem;
 }
 
@@ -1047,7 +1041,6 @@ a:active {
 }
 
 .menu-toggle {
-	grid-area: c;
 	display: none;
 }
 
@@ -1771,14 +1764,7 @@ object {
 		grid-column: 1;
 		grid-row: 1;
 	}
-	.site-header {
-		grid-template-areas: "a b"
-			"c c";
-		grid-template-columns: 1fr auto;
-		grid-template-rows: 1fr 0;
-	}
-	.menu-1 {
-		grid-area: c;
+	.menu-header-menu-container {
 		position: absolute;
 		left: -80px;
 		right: -80px;
@@ -1790,7 +1776,6 @@ object {
 	}
 	.menu-toggle {
 		display: block;
-		grid-area: b;
 	}
 	.menu-1 ul.menu {
 		padding: 0;
