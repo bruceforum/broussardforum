@@ -1786,6 +1786,7 @@ object {
 		margin: 0;
 		overflow: hidden;
 		padding: 0 80px;
+		background-color: #fff;
 	}
 	.menu-toggle {
 		display: block;
@@ -1795,7 +1796,7 @@ object {
 		padding: 0;
 	}
 	.menu-1 ul.menu li a {
-		color:rgba(23, 36, 160, 1);
+		color: #303135;
 	}
 }
 
