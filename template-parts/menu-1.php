@@ -9,8 +9,8 @@
 
 ?>
 
-<input id="menu-toggle" type="checkbox" />
-<label for="menu-toggle" aria-controls="site-menu" aria-expanded="false">
+<input id="toggle" type="checkbox" />
+<label for="toggle">
 	<button class="menu-toggle" >
 		<?php esc_html_e( 'Site Navigation', 'scaffold' ); ?>
 	</button>
