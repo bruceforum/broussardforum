@@ -1775,7 +1775,7 @@ object {
 		background-color: #fff;
 		height: 0;
 	}
-	.menu-header-menu-container[aria-expanded='true'] {
+	.menu.toggled .menu-header-menu-container {
 		height: auto;
 	}
 	.menu-toggle {
