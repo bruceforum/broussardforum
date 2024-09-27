@@ -9,13 +9,10 @@
 
 ?>
 
-<input id="toggle" type="checkbox" />
-<label for="toggle">
-	<button class="menu-toggle" >
+<nav id="site-navigation" class="menu-1">
+	<button class="menu-toggle" aria-controls="site-menu" aria-expanded="false">
 		<?php esc_html_e( 'Site Navigation', 'scaffold' ); ?>
 	</button>
-<label>
-<nav id="site-navigation" class="menu-1">
 	<?php
 	wp_nav_menu(
 		array(
