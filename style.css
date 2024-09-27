@@ -1773,7 +1773,8 @@ object {
 		overflow: hidden;
 		padding: 0 80px;
 		background-color: #fff;
-		height: 0;
+		max-height: 0;
+		transition: all 0.2s ease-in-out;
 	}
 	.menu-toggle {
 		display: block;
@@ -1782,7 +1783,7 @@ object {
 		margin-left: auto;
 	}
 	.menu-1.toggled .menu-header-menu-container {
-		height: auto;
+		max-height: 52.39px;
 	}
 	.menu-1 ul.menu {
 		padding: 0;
