@@ -1042,6 +1042,7 @@ a:active {
 
 .menu-toggle {
 	display: none;
+	margin-left: auto;
 }
 
 /*--------------------------------------------------------------
@@ -1766,13 +1767,17 @@ object {
 	}
 	.menu-header-menu-container {
 		position: absolute;
-		left: -80px;
-		right: -80px;
-		top: 0;
+		left: 0;
+		right: 0px;
+		top: 104px;
 		margin: 0;
 		overflow: hidden;
 		padding: 0 80px;
 		background-color: #fff;
+		height: 0;
+	}
+	.menu-header-menu-container[aria-hidden='true'] {
+		height: auto;
 	}
 	.menu-toggle {
 		display: block;
