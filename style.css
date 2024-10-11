@@ -317,6 +317,10 @@ th {
 	color: #FFFFFF;
 }
 
+.tertiary-100 {
+	color: #323B4A;
+}
+
 .bg-primary {
 	background: rgba(23, 36, 160, 1);
 }
@@ -1234,6 +1238,10 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 
 .contact-content p {
 	margin: 0;
+}
+
+.no-underline {
+	text-decoration: none;
 }
 
 /*--------------------------------------------------------------
