@@ -773,6 +773,15 @@ table td {
 	margin: 0 auto !important;
 }
 
+.wp-block-query-pagination * {
+	color: #323B4A;
+	font-family: Calibri;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.5rem;
+	text-align: left;
+}
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
