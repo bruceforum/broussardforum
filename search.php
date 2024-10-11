@@ -11,7 +11,7 @@
 
 get_header(); ?>
 
-	<section class="content-area">
+	<section class="content-area container">
 
 		<?php if ( have_posts() ) : ?>
 
