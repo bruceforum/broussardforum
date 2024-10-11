@@ -18,7 +18,7 @@
 	<footer class="site-footer">
 		<div class="container">
 			<div class="site-info">
-				<h2>Bruce Broussard</h2>
+				<?php scaffold_the_custom_logo(); ?>
 			</div>
 			<div class="site-map">
 				<div class="site-map-category">
