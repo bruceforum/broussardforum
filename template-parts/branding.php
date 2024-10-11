@@ -11,13 +11,11 @@
 
 <div class="site-branding">
 
-	<?php scaffold_the_custom_logo(); ?>
-
 	<?php if ( is_front_page() && is_home() ) : ?>
 
 		<h1 class="site-title l">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<?php bloginfo( 'name' ); ?>
+				<?php scaffold_the_custom_logo(); ?>
 			</a>
 		</h1>
 
@@ -25,7 +23,7 @@
 
 		<h1 class="site-title l">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<?php bloginfo( 'name' ); ?>
+				<?php scaffold_the_custom_logo(); ?>
 			</a>
 		</h1>
 
