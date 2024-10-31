@@ -22,6 +22,7 @@
 			</div>
 			<div class="site-map">
 				<div class="site-map-category">
+					<h3><?php esc_html_e( 'Site Navigation', 'scaffold' ); ?></h3>
 					<?php
 						wp_nav_menu(
 							array(
@@ -30,13 +31,6 @@
 							)
 						);
 					?>
-					<h3>Group</h3>
-					<ul>
-						<li>
-							<a>Page</a>
-						</li>
-					</ul>
-					<a>SPECIAL LINK</a>
 				</div>
 			</div>
 			<hr />
