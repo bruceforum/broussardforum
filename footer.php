@@ -33,6 +33,9 @@
 			</div>
 			<hr />
 			<div class="site-links">
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/bruce-broussard-ba2b69b">LinkedIn</a>
+				</div>
 				<div class="legal-links">
 					<a>Privacy Policy</a>
 					<a>Cookie Policy</a>

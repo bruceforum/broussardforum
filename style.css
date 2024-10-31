@@ -1626,6 +1626,12 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 	display: flex;
 }
 
+.site-footer .site-links .social-links {
+	margin-right: auto;
+	display: flex;
+	gap: 2rem;
+}
+
 .site-footer .site-links .legal-links {
 	margin-left: auto;
 	display: flex;
