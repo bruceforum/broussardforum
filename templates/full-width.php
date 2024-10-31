@@ -25,7 +25,7 @@ get_header(); ?>
 				<?php if ( is_front_page() ) : ?>
 					<div class="entry-content front-page">
 				<?php else : ?>
-					<div class="entry-content">
+					<div class="entry-content container">
 				<?php endif; ?>
 					<?php
 					the_content();
