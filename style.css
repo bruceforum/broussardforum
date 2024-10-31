@@ -792,6 +792,10 @@ table td {
 	display: none;
 }
 
+.wp-block-media-text.has-media-on-the-right > .wp-block-media-text__media {
+	align-self: flex-start;
+}
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
