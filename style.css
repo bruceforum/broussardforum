@@ -1482,6 +1482,10 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 	gap: 2.5rem;
 }
 
+.align-start {
+	align-self: flex-start !important;
+}
+
 /*--------------------------------------------------------------
 # Grid
 --------------------------------------------------------------*/
