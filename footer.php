@@ -22,6 +22,7 @@
 			</div>
 			<div class="site-map">
 				<div class="site-map-category">
+					<?php esc_html_e( 'Site Navigation', 'scaffold' ); ?>
 					<h3>Group</h3>
 					<ul>
 						<li>
