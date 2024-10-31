@@ -22,7 +22,14 @@
 			</div>
 			<div class="site-map">
 				<div class="site-map-category">
-					<?php esc_html_e( 'Site Navigation', 'scaffold' ); ?>
+					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'menu-1',
+								'menu_id'        => 'site-menu',
+							)
+						);
+					?>
 					<h3>Group</h3>
 					<ul>
 						<li>
