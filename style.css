@@ -1091,6 +1091,11 @@ a:active {
 	display: none;
 }
 
+.site-map-category > .menu-header-menu-container > .menu {
+	display: flex;
+	gap: 2rem;
+}
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -1628,6 +1633,7 @@ ul.wp-block-latest-posts>li>.wp-block-latest-posts__post-excerpt {
 
 .site-footer .site-links {
 	display: flex;
+	gap: 2rem;
 }
 
 .site-footer .site-links .social-links {
