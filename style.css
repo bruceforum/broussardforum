@@ -1826,7 +1826,7 @@ object {
 		grid-column: 1;
 		grid-row: 1;
 	}
-	.menu-header-menu-container {
+	.menu-1 > .menu-header-menu-container {
 		position: absolute;
 		left: 0;
 		right: 0px;
